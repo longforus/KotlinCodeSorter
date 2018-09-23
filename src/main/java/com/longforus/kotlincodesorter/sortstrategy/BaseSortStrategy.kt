@@ -1,11 +1,12 @@
-package com.longforus.sortstrategy
+package com.longforus.kotlincodesorter.sortstrategy
 
 import org.jetbrains.kotlin.psi.KtDeclaration
 
+
+@Deprecated("indexOf 方法会报错")
 abstract class BaseSortStrategy(private val mAllDeclarations: List<out KtDeclaration>) {
 
     protected var mOrdering: List<String>? = null
-
     fun sort(): List<KtDeclaration> {
         if (mOrdering == null) {
             return mAllDeclarations

@@ -1,19 +1,20 @@
-package com.longforus.Action
+package com.longforus.kotlincodesorter.action
 
 import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.actionSystem.LangDataKeys
 import com.intellij.openapi.command.WriteCommandAction
-import com.longforus.Sort.Sorter
+import com.longforus.kotlincodesorter.sort.Sorter
 import org.jetbrains.kotlin.psi.KtClassOrObject
 import java.util.*
 
+
 /**
- * Created by armand on 3/1/15.
+ * Created by XQ Yang on 9/21/2018  5:06 PM.
+ * Description :
  */
+
 class SortAction : AnAction() {
-
-
 
 
     override fun actionPerformed(e: AnActionEvent) {
@@ -36,7 +37,6 @@ class SortAction : AnAction() {
             }.execute()
         }
     }
-
 
     /**
      * @param e the action event that occurred

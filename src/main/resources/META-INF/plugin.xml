@@ -1,11 +1,32 @@
 <idea-plugin>
-  <id>com.longforus.kotlincodesort</id>
-  <name>Plugin display name here</name>
-  <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+  <id>com.longforus.kotlincodesorter</id>
+  <name>Kotlin Code Sorter</name>
+  <vendor email="yxq.longforus@gmail.com" url="https://github.com/longforus">longforus</vendor>
 
   <description><![CDATA[
-    Enter short description for your plugin here.<br>
-    <em>most HTML tags may be used</em>
+    <em></em>
+    <h1>Kotlin Code Sorter</h1>
+      <br/>
+      <p>
+      <b>
+      <a href="https://github.com/longforus/KotlinCodeSorter">Website</a> |
+      <a href="https://github.com/longforus">GitHub</a> |
+      <a href="https://github.com/longforus/KotlinCodeSorter/issues">Issues</a> |
+      <a href="https://blog.csdn.net/longforus">Blog</a>
+      </b>
+      </p>
+      <br/>
+      <p><b>A simple plugin for sorting kotlin code.</b></p>
+      <br/>
+      <p><b>Features:</b>
+      <ul>
+        <li>Sort the kotlin code in the order of fields -> initializer -> constructors -> functions.</li>
+      </ul>
+      </p>
+      <br/>
+      Inspiration from <a href="https://plugins.jetbrains.com/plugin/7742-lifecycle-sorter">Lifecycle Sorter</a>
+      <br/>
+      <p><a href="https://github.com/longforus/KotlinCodeSorter/issues">Send feedback</a></p>
     ]]></description>
 
   <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
@@ -13,20 +34,21 @@
   <!-- uncomment to enable plugin in all products
   <depends>com.intellij.modules.lang</depends>
   -->
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="171"/>
   <depends>org.jetbrains.kotlin</depends>
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->
   </extensions>
 
   <actions>
-    <group id="sorter" text="Sort Lifecycle Methods" popup="true" description="Sorts the lifecycle methods of an activity">
+    <group id="sorter" text="Sort kotlin code" popup="true" description="Sort the kotlin code in order">
 
-      <action class="com.longforus.Action.SortAction" id="sortStart" text="Place at Start of Class" description="Places the sorted methods at the start of the class">
+      <action class="com.longforus.kotlincodesorter.action.SortAction" id="sortStart" text="fields->initializer->constructors->functions"
+          description="Sort the kotlin code in this order">
         <keyboard-shortcut first-keystroke="control alt K" keymap="$default"/>
       </action>
-
       <add-to-group group-id="CodeMenu" anchor="last"/>
-
     </group>
   </actions>
 </idea-plugin>
