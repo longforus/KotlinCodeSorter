@@ -27,4 +27,4 @@ A simple plugin for sorting kotlin code.
 ![2](./img/2.png)
 
 
-[latest-release]: https://plugins.jetbrains.com/plugin/10907-mvpautocodeplus
+[latest-release]: https://plugins.jetbrains.com/plugin/11163-kotlin-code-sorter
