@@ -27,4 +27,6 @@ A simple plugin for sorting kotlin code.
 ![2](./img/2.png)
 
 
+灵感来自[Lifecycle Sorter](https://plugins.jetbrains.com/plugin/7742-lifecycle-sorter)
+
 [latest-release]: https://plugins.jetbrains.com/plugin/11163-kotlin-code-sorter
