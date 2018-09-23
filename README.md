@@ -2,7 +2,7 @@
 
 A simple plugin for sorting kotlin code.
 
-一个可以对kotlin代码排序的小工具.
+  一个可以对kotlin代码排序的小工具.最近在日常的开发中,发现kotlin的代码排列不如Java的好,在IDEA或者AndroidStudio里面Java的字段一般在前,方法在后,看起来比较感觉比较好.但是在kotlin中覆写的变量和函数是根据覆写的先后顺序来排列的,后写的在前面,先写的在后面.而且字段和函数是穿插排列的,真是逼死强迫症,有了这个小插件,轻轻一按瞬间排好,美滋滋.
 
 ![1](./img/1.gif)
 
@@ -22,9 +22,9 @@ A simple plugin for sorting kotlin code.
 
 ## 使用
 
-  默认快捷键 Ctrl + Alt + K.可自行修改:
-
-![2](./img/2.png)
+1. 默认快捷键 Ctrl + Alt + K.可自行修改:
+   ![2](./img/2.png)
+2. 当然也可以点击<kbd>Code</kbd> > <kbd>Sort kotlin code</kbd> > <kbd>fields->initializer->constructors->functions</kbd> 
 
 
 灵感来自[Lifecycle Sorter](https://plugins.jetbrains.com/plugin/7742-lifecycle-sorter)
