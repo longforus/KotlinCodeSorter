@@ -14,7 +14,7 @@ plugins {
 }
 
 group 'com.longforus'
-version '1.0'
+version '1.1'
 
 apply plugin: 'kotlin'
 
@@ -38,8 +38,9 @@ intellij {
 }
 patchPluginXml {
     changeNotes """
-      First version release.<br>
-      <em>add default order: fields->initializer->constructors->functions</em>"""
+      Fix bugs that appear in the Code menu at the same time as LifecycleSorter.<br>
+      Performance optimization.<br>
+      <em>default order: fields->initializer->constructors->functions</em>"""
 }
 
 publishPlugin {

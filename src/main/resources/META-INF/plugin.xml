@@ -21,6 +21,7 @@
       <p><b>Features:</b>
       <ul>
         <li>Sort the kotlin code in the order of fields -> initializer -> constructors -> functions.</li>
+        <li>default shortcuts is <b>Ctrl+Alt+K</b>,if no effect, check the shortcut key Settings.</li>
       </ul>
       </p>
       <br/>
@@ -42,9 +43,9 @@
   </extensions>
 
   <actions>
-    <group id="sorter" text="Sort kotlin code" popup="true" description="Sort the kotlin code in order">
+    <group id="com.longforus.kotlincodesorter" text="Sort kotlin code" popup="true" description="Sort the kotlin code in order">
 
-      <action class="com.longforus.kotlincodesorter.action.SortAction" id="sortStart" text="fields->initializer->constructors->functions"
+      <action class="com.longforus.kotlincodesorter.action.SortAction" id="com.longforus.kotlincodesorter.action.SortAction" text="fields->initializer->constructors->functions"
           description="Sort the kotlin code in this order">
         <keyboard-shortcut first-keystroke="control alt K" keymap="$default"/>
       </action>
