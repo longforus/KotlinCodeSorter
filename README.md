@@ -9,7 +9,8 @@ A simple plugin for sorting kotlin code.
 
 ## 特征
 
--   支持按照字段->初始化块->构造方法->方法->内部类的顺序对代码进行排序.
+-   支持按照字段->初始化块->构造方法->方法->内部类的默认顺序对代码进行排序.
+-   从1.2开始可以在设置界面自定义排序顺序.
 
 ## 安装
 
@@ -25,9 +26,17 @@ A simple plugin for sorting kotlin code.
 
 1. 默认快捷键 Ctrl + Alt + K.可自行修改:
    ![2](./img/2.png)
+   
 2. 当然也可以点击<kbd>Code</kbd> > <kbd>Sort kotlin code</kbd> > <kbd>fields->initializer->constructors->functions</kbd> 
+
+3. 点击<kbd>File</kbd> ><kbd>Settings</kbd> ><kbd>Other Settings</kbd> ><kbd>Kotlin Code Sorter</kbd> 可以调整自己喜欢的排列顺序:
+
+   ![3](./img/3.png)
+
+   
 
 
 灵感来自[Lifecycle Sorter](https://plugins.jetbrains.com/plugin/7742-lifecycle-sorter)
 
 [latest-release]: https://plugins.jetbrains.com/plugin/11163-kotlin-code-sorter
+

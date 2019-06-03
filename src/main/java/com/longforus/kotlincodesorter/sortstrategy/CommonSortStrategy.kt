@@ -1,5 +1,7 @@
 package com.longforus.kotlincodesorter.sortstrategy
 
+import com.intellij.ide.util.PropertiesComponent
+import com.longforus.kotlincodesorter.config.ConfigComponent
 import org.jetbrains.kotlin.psi.*
 
 /**
@@ -9,12 +11,20 @@ import org.jetbrains.kotlin.psi.*
 
 class CommonSortStrategy(mAllDeclarations: List<KtDeclaration>) : BaseSortStrategyJ(mAllDeclarations) {
     init {
-        mOrdering = ArrayList()
-        mOrdering.add(KtProperty::class.java.name)
-        mOrdering.add(KtClassInitializer::class.java.name)
-        mOrdering.add(KtSecondaryConstructor::class.java.name)
-        mOrdering.add(KtNamedFunction::class.java.name)
-        mOrdering.add(KtClass::class.java.name)
-        mOrdering.add(KtObjectDeclaration::class.java.name)
+        mOrdering = PropertiesComponent.getInstance().getValues(ConfigComponent.SAVED_SORT_ORDER_ARRAY_KEY)?.toList() ?: getDefaultOrdering()
+    }
+
+
+    companion object {
+        fun getDefaultOrdering(): List<String> {
+            var list = mutableListOf<String>()
+            list.add(KtProperty::class.java.name)
+            list.add(KtClassInitializer::class.java.name)
+            list.add(KtSecondaryConstructor::class.java.name)
+            list.add(KtNamedFunction::class.java.name)
+            list.add(KtClass::class.java.name)
+            list.add(KtObjectDeclaration::class.java.name)
+            return list
+        }
     }
 }
