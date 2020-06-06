@@ -1,7 +1,7 @@
 package com.longforus.kotlincodesorter.sort
 
-import com.longforus.kotlincodesorter.sortstrategy.CommonSortStrategy
 import com.longforus.kotlincodesorter.sortstrategy.ISortStrategy
+import com.longforus.kotlincodesorter.sortstrategy.NameSortStrategy
 import org.jetbrains.kotlin.psi.KtClassOrObject
 import org.jetbrains.kotlin.psi.KtDeclaration
 
@@ -11,10 +11,10 @@ import org.jetbrains.kotlin.psi.KtDeclaration
  * Description :
  */
 
-class Sorter(override val mPsiClass: KtClassOrObject) :ISorter{
+class NameSorter(override val mPsiClass: KtClassOrObject) :ISorter{
 
     override fun getStrategy(declarations: List<KtDeclaration>): ISortStrategy {
-        return CommonSortStrategy(declarations)
+        return NameSortStrategy(declarations)
     }
 
 }

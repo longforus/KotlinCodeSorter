@@ -1,7 +1,7 @@
 package com.longforus.kotlincodesorter.action
 
 import com.longforus.kotlincodesorter.sort.ISorter
-import com.longforus.kotlincodesorter.sort.Sorter
+import com.longforus.kotlincodesorter.sort.NameSorter
 import org.jetbrains.kotlin.psi.KtClassOrObject
 
 
@@ -10,8 +10,8 @@ import org.jetbrains.kotlin.psi.KtClassOrObject
  * Description :
  */
 
-class SortAction : BaseSortAction() {
+class NameSortAction : BaseSortAction() {
 
 
-    override fun getSort(clazz: KtClassOrObject): ISorter  = Sorter(clazz)
+    override fun getSort(clazz: KtClassOrObject): ISorter  = NameSorter(clazz)
 }

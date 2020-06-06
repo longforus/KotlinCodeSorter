@@ -50,6 +50,10 @@
           description="Sort the kotlin code in this order">
         <keyboard-shortcut first-keystroke="control alt K" keymap="$default"/>
       </action>
+      <action class="com.longforus.kotlincodesorter.action.NameSortAction" id="com.longforus.kotlincodesorter.action.NameSortAction"
+          text="sort by name"
+          description="sort by name">
+      </action>
       <add-to-group group-id="CodeMenu" anchor="last"/>
     </group>
   </actions>
