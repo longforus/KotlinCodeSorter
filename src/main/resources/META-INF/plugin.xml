@@ -36,7 +36,7 @@
   <depends>com.intellij.modules.lang</depends>
   -->
   <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
-  <idea-version since-build="171"/>
+  <idea-version since-build="192"/>
   <depends>org.jetbrains.kotlin</depends>
   <extensions defaultExtensionNs="com.intellij">
     <applicationConfigurable instance="com.longforus.kotlincodesorter.config.ConfigComponent"/>
