@@ -15,12 +15,12 @@ A simple plugin for sorting kotlin code.
 ## Install
 
 - **Use IDE built-in plugin market installation:**
-  - <kbd>File</kbd> > <kbd>Preferences(Settings)</kbd> > <kbd>Plugins</kbd> > <kbd>Browse repositories...</kbd> > <kbd>搜索并找到"Kotlin code sotrer"</kbd> > <kbd>Install Plugin</kbd>
+  - <kbd>File</kbd> > <kbd>Preferences(Settings)</kbd> > <kbd>Plugins</kbd> > <kbd>Browse repositories...</kbd> > <kbd>search "Kotlin code sorter"</kbd> > <kbd>Install Plugin</kbd>
 
 - **Manual:**
   - Download[`Latest Release`][latest-release] > <kbd>File</kbd> ><kbd>Preferences(Settings)</kbd> > <kbd>Plugins</kbd> > <kbd>Install plugin from disk...</kbd>
 
-重启**IDE**.
+relaunch **IDE**.
 
 ## Use
 
