@@ -15,7 +15,7 @@ A simple plugin for sorting kotlin code. [Machine Translate English ReadMe](./RE
 ## 安装
 
 - **使用 IDE 内置插件系统安装:**
-  - <kbd>File</kbd> > <kbd>Preferences(Settings)</kbd> > <kbd>Plugins</kbd> > <kbd>Browse repositories...</kbd> > <kbd>搜索并找到"Kotlin code sotrer"</kbd> > <kbd>Install Plugin</kbd>
+  - <kbd>File</kbd> > <kbd>Preferences(Settings)</kbd> > <kbd>Plugins</kbd> > <kbd>Browse repositories...</kbd> > <kbd>搜索并找到"Kotlin code sorter"</kbd> > <kbd>Install Plugin</kbd>
 
 - **手动安装:**
   - 下载[`最新发布的插件包`][latest-release] > <kbd>File</kbd> ><kbd>Preferences(Settings)</kbd> > <kbd>Plugins</kbd> > <kbd>Install plugin from disk...</kbd>
