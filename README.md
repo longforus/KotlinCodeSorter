@@ -1,6 +1,6 @@
 # Kotlin Code Sorter
 
-A simple plugin for sorting kotlin code.
+A simple plugin for sorting kotlin code. [Machine Translate English ReadMe](./README_en.md)
 
   一个可以对kotlin代码排序的小插件.最近在日常的开发中,发现kotlin的代码排列不如Java的好,在IDEA或者AndroidStudio里面Java的字段一般在前,方法在后,看起来比较感觉比较好.但是在kotlin中覆写的变量和函数是根据覆写的先后顺序来排列的,后写的在前面,先写的在后面.而且字段和函数是穿插排列的,真是逼死强迫症,
   有了这个小插件,轻轻一按瞬间排好,美滋滋.

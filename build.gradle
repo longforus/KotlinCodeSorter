@@ -52,7 +52,7 @@ publishPlugin {
     token publishToken
 }
 
-//指定编译的编码
+//Specifies the encoding to compile
 tasks.withType(JavaCompile){
     options.encoding = "UTF-8"
 }
